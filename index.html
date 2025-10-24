@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeBBio by @umask007</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+</head>
+<body class="preload">
+
+    <div class="stars" id="stars"></div>
+    <div class="night" id="night"></div>
+
+    <label class="modo">
+        <input type="checkbox" id="toggle">
+        <span class="barra"></span>
+    </label>
+
+    <div class="page-container" id="page-container">
+
+        <div class="screen active" id="home-screen">
+            <h1 class="container-content">WeBBio by @umask007</h1>
+
+            <div class="content-box glass-effect">
+                <h3>Мой вид деятельности</h3>
+                <p>
+                    Я занимаюсь портированием (адаптацией) прошивок на различные
+                    устройства, переношу программное обеспечение с одного девайса
+                    на другой, обеспечивая их стабильную работу и полную
+                    функциональность. Так же, в скором времени я создам свой 
+                    собственный проект, и постепенно в список Supported Devices 
+                    будет появлятся все больше и больше устройств.
+                </p>
+            </div>
+
+            <div class="glass-effect content-box" id="supported-content">
+                <p class="centered-soon">Supported Devices<br>Soon..</p>
+            </div>
+        </div>
+
+        <div class="screen" id="devices-screen">
+            <h1 class="container-content">Мои Устройства</h1>
+            <div class="device-list container-content" id="device-list">
+                <div class="device-card glass-effect">
+                    <a href="#" class="device-header">
+                        <h3>Pixel 7</h3>
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="device-specs">
+                        <div class="specs-content">
+                            <ul>
+                                <li><strong>Color:</strong> Obsidian</li>
+                                <li><strong>Memory:</strong> 8/128</li>
+                                <li><strong>Firmware:</strong> Lineage Os 22.2 (full rootles)</li>
+                                <li><strong>Main:</strong> Farmer Main</li>
+                            </ul>
+                            <p class="opinion">My opinion: A cool phone for everyday tasks, as well as photos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device-card glass-effect">
+                    <a href="#" class="device-header">
+                        <h3>Xiaomi 12S Ultra</h3>
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="device-specs">
+                        <div class="specs-content">
+                            <ul>
+                                <li><strong>Color:</strong> Black</li>
+                                <li><strong>Memory:</strong> 12/512</li>
+                                <li><strong>Firmware:</strong> HyperOS 2.0.207.0.VLACNXM (full rootles)</li>
+                                <li><strong>Main:</strong> Farmer Main</li>
+                            </ul>
+                            <p class="opinion">My opinion: The phone is just beautiful. It has very good ergonomics and feels very comfortable in your hand. It does not heat up, it is perfect for photos and games.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device-card glass-effect">
+                    <a href="#" class="device-header">
+                        <h3>Xiaomi Mi 11T Pro</h3>
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="device-specs">
+                        <div class="specs-content">
+                            <ul>
+                                <li><strong>Color:</strong> White</li>
+                                <li><strong>Memory:</strong> 8/128</li>
+                                <li><strong>Firmware:</strong> lineage os 22.1 (full rootles)</li>
+                                <li><strong>Main:</strong> Farmer Main</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device-card glass-effect">
+                    <a href="#" class="device-header">
+                        <h3>IPhone Xs</h3>
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="device-specs">
+                        <div class="specs-content">
+                            <ul>
+                                <li><strong>Color:</strong> White</li>
+                                <li><strong>Memory:</strong> 4/128</li>
+                                <li><strong>Firmware:</strong> iOS 18.6.2</li>
+                                <li><strong>Main:</strong> Main</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device-card glass-effect">
+                    <a href="#" class="device-header">
+                        <h3>IPhone 6s+</h3>
+                        <span class="arrow">▼</span>
+                    </a>
+                    <div class="device-specs">
+                        <div class="specs-content">
+                            <ul>
+                                <li><strong>Color:</strong> Gray</li>
+                                <li><strong>Memory:</strong> 2/128</li>
+                                <li><strong>Firmware:</strong> iOS 15.8.5 (not jailbreak)</li>
+                                <li><strong>Main:</strong> I use it sometimes</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="screen" id="contact-screen">
+            <h1 class="container-content">Связь со мной</h1>
+            <div class="content-box glass-effect">
+                <h3>Мои Соц Сети</h3>
+                <p>
+                    Telegram: <a href="https://t.me/umask007" target="_blank" rel="noopener noreferrer">@umask007</a><br>
+                    Telegram Chanel: Soon..<br>
+                    TikTok: Soon..
+                </p>
+            </div>
+        </div>
+
+    </div>
+    
+    <nav class="bottom-nav glass-effect" role="navigation" aria-label="Меню навигации">
+        <a href="#home" class="nav-link active" data-screen="home-screen">
+            <span class="link-icon material-symbols-rounded">home</span>
+            <span class="link-title">Главная</span>
+        </a>
+        <a href="#devices" class="nav-link" data-screen="devices-screen">
+            <span class="link-icon material-symbols-rounded">phone_android</span>
+            <span class="link-title">Устройства</span>
+        </a>
+        <a href="#contact" class="nav-link" data-screen="contact-screen">
+            <span class="link-icon material-symbols-rounded">chat</span>
+            <span class="link-title">Связь</span>
+        </a>
+    </nav>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- ИСПРАВЛЕНИЕ: Отключаем временный класс для анимаций после загрузки ---
+            setTimeout(() => {
+                document.body.classList.remove('preload');
+            }, 50); 
+            
+            // --- ЛОГИКА ТЕМЫ (Dark/Light Mode) ---
+            const toggle = document.getElementById("toggle");
+            const body = document.body;
+
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (prefersDark) {
+                body.classList.add('dark');
+                toggle.checked = true;
+            }
+
+            toggle.addEventListener("change", () => {
+                body.classList.toggle("dark", toggle.checked);
+            });
+            
+            // --- ЛОГИКА НАВИГАЦИИ (Смена Экранов) ---
+            const navLinks = document.querySelectorAll('.nav-link');
+            const screens = document.querySelectorAll('.screen');
+            const pageContainer = document.getElementById('page-container');
+
+            function switchScreen(targetScreenId) {
+                const activeScreen = document.querySelector('.screen.active');
+                
+                let direction = 0; 
+                const screenOrder = ['home-screen', 'devices-screen', 'contact-screen'];
+                const currentScreenIndex = screenOrder.indexOf(activeScreen ? activeScreen.id : '');
+                const targetScreenIndex = screenOrder.indexOf(targetScreenId);
+
+                if (targetScreenIndex > currentScreenIndex) {
+                    direction = 1; 
+                } else if (targetScreenIndex < currentScreenIndex) {
+                    direction = -1;
+                }
+                
+                // Перемещаем старый экран
+                if (activeScreen && activeScreen.id !== targetScreenId) {
+                    activeScreen.style.transform = `translateX(${direction * -100}%)`;
+                    activeScreen.style.opacity = '0';
+                    setTimeout(() => {
+                        activeScreen.classList.remove('active');
+                        activeScreen.style.transform = 'translateX(100%)'; 
+                        activeScreen.style.visibility = 'hidden';
+                    }, 500); 
+                } else if (!activeScreen) {
+                    // Если активный экран не найден (что не должно произойти после первого запуска), 
+                    // просто сбрасываем все неактивные
+                    screens.forEach(screen => {
+                        if (screen.id !== targetScreenId) {
+                            screen.classList.remove('active');
+                            screen.style.transform = 'translateX(100%)';
+                            screen.style.opacity = '0';
+                            screen.style.visibility = 'hidden';
+                        }
+                    });
+                }
+
+                // Показываем новый экран
+                const targetScreen = document.getElementById(targetScreenId);
+                if (targetScreen) {
+                    if (targetScreen.classList.contains('active')) {
+                        // Если уже активен, просто скроллим вверх
+                         pageContainer.scrollTop = 0; 
+                        return;
+                    }
+
+                    // Устанавливаем начальную позицию для анимации
+                    targetScreen.style.transform = `translateX(${direction * 100}%)`;
+                    targetScreen.style.visibility = 'visible';
+                    targetScreen.style.opacity = '0'; 
+                    
+                    // Запускаем анимацию
+                    setTimeout(() => {
+                        targetScreen.classList.add('active');
+                        targetScreen.style.transform = 'translateX(0)';
+                        targetScreen.style.opacity = '1';
+                        pageContainer.scrollTop = 0; 
+                    }, 50); 
+                }
+            }
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    
+                    const targetScreenId = this.getAttribute('data-screen');
+
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+
+                    switchScreen(targetScreenId);
+                });
+            });
+
+
+            // --- ЛОГИКА АККОРДЕОНА (Характеристики Устройств) ---
+            const deviceHeaders = document.querySelectorAll('.device-header');
+            
+            deviceHeaders.forEach(header => {
+                const specs = header.nextElementSibling;
+                specs.style.maxHeight = '0px'; 
+                
+                header.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    
+                    const specs = this.nextElementSibling;
+                    const specsContent = specs.querySelector('.specs-content'); 
+
+                    this.classList.toggle('active');
+                    specs.classList.toggle('visible');
+                    
+                    if (specs.classList.contains('visible')) {
+                        // Раскрытие: используем scrollHeight + запас
+                        specs.style.maxHeight = specsContent.scrollHeight + 50 + 'px';
+                    } else {
+                        // Скрытие
+                        specs.style.maxHeight = '0px';
+                    }
+                });
+            });
+
+
+            // --- ЛОГИКА ЗВЕЗД (Starry Night) ---
+            const starsContainer = document.getElementById("stars");
+            for (let i = 0; i < 200; i++) {
+                const star = document.createElement("div");
+                star.className = "star";
+                star.style.left = Math.random() * 100 + "%";
+                star.style.top = Math.random() * 100 + "%";
+                star.style.animationDelay = Math.random() * 4 + "s";
+                star.style.animationDuration = Math.random() * 3 + 2 + "s";
+                starsContainer.appendChild(star);
+            }
+            
+            const nightContainer = document.getElementById("night");
+            const colors = ["", "blue", "purple", "gold"];
+            for (let i = 0; i < 50; i++) {
+                const shootingStar = document.createElement("div");
+                shootingStar.className = "shooting_star";
+                if (Math.random() > 0.4) {
+                    const colorClass = colors[Math.floor(Math.random() * colors.length)];
+                    if (colorClass) shootingStar.classList.add(colorClass);
+                }
+                shootingStar.style.top = Math.random() * 100 - 50 + "%";
+                shootingStar.style.left = Math.random() * 100 - 50 + "%";
+                const delay = Math.random() * 5 + "s";
+                shootingStar.style.animationDelay = delay;
+                const duration = Math.random() * 2 + 3 + "s";
+                shootingStar.style.animationDuration = duration;
+                nightContainer.appendChild(shootingStar);
+            }
+
+        });
+    </script>
+
+</body>
+</html>
